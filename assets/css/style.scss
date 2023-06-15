@@ -3,6 +3,17 @@
 
 @import "{{ site.theme }}";
 
-.post-meta {
-    color: red !important;
+$green: #2b4707;
+$brown:  #e2dcba;
+
+.site-header {
+  background-color: $green;
 }
+
+.site-title {
+  color: $brown !important;
+
+}
+// .post-meta {
+//     color: $color !important;
+// }
