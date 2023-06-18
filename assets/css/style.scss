@@ -6,6 +6,8 @@
 // FONTS
 $prompt_font_family: 'Prompt', sans-serif;
 $josefin_font_family: 'Josefin Sans', sans-serif;
+$merriweather_font_family: 'Merriweather', serif;
+$pt_sans_font_family: 'PT Sans', sans-serif;
 
 $dark_green: #374810;
 // $dark_green: #324900;
@@ -21,6 +23,18 @@ $dark_brown: #5E583E;
 // UNIVERSAL CLASSES
 .text-bold {
   font-weight: bold;
+}
+
+.prairie_concrete-bold_text {
+  @extend .text-bold;
+  text-transform: uppercase;
+}
+
+.prairie_concrete-logo {
+  max-width: 15rem;
+  margin: 0 auto;
+  display: block;
+  width: 50%;
 }
 
 body {
@@ -80,7 +94,7 @@ h1 {
   }
 
   &.pc-event_blocks {
-    // TBD
+    background-color: $light_green;
   }
 
   &.pc-event_info {
@@ -111,6 +125,24 @@ p {
   font-weight: 300;
 }
 
+.pc-logo_banner {
+  font-size: 1.5rem;
+
+  .pc-logo_banner-prairie {
+    font-family: $merriweather_font_family;
+  }
+
+  .pc-logo_banner-divider, .pc-logo_banner-concrete {
+    font-family: $prompt_font_family;
+    font-weight: 300;
+  }
+}
+
+.pc-introduction {
+  font-size: 1rem;
+  font-family: $prompt_font_family;
+}
+
 .banner-img {
   h2 {
     color: $light_green;
@@ -122,14 +154,31 @@ p {
     background-size: cover;
     padding: 2rem;
   }
+
+  &.bi-workshops {
+    position: relative;
+    text-align: center;
+
+    img {
+      opacity: 0.75;
+    }
+
+    .h2-text {
+        position: absolute;
+        background-color: $dark_green;
+  bottom: 8px;
+  left: 16px;
+    }
+  }
 }
 
 // FOOTER
-footer {
-  background-color: $light_brown;
-  color: $dark_brown;
-}
+// footer {
+//   background-color: $light_brown;
+//   color: $dark_brown;
+// }
 
 // .post-meta {
 //     color: $color !important;
 // }
+

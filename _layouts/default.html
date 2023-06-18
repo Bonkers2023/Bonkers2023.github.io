@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
-  <link rel="stylesheet" href="/assets/css/style.css">
 
   <body>
-
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
       <section class="wrapper-bg pc-logo_banner">
         <div class="wrapper">
-          <img src="/docs/assets/images/placeholder_1.jpg">
+          <img class="prairie_concrete-logo" src="/docs/assets/images/placeholder_1.png">
           <h1>
             <span class="pc-logo_banner-prairie">Prairie</span>
-            <span class="pc-logo_banner-divider"> | </span>
+            <span class="pc-logo_banner-divider">|</span>
             <span class="pc-logo_banner-concrete">Concrete</span>
           </h1>
-        <!-- {{ content }} -->
-
         </div>
       </section>
 
       <section class="wrapper-bg pc-introduction">
         <div class="wrapper">
           <p>
-            Welcome to PRAIRIE|CONCRETE, a project that brings visibility to plant cycles and growing practices through embodied listening and movement sessions with communities in Imniza Ska, (where the white rock bluffs form what we now call St. Paul, Minnesota).
+            Welcome to <span class="prairie_concrete-bold_text">Prairie|Concrete</span>, a project that brings visibility to plant cycles and growing practices through embodied listening and movement sessions with communities in Imniza Ska, (where the white rock bluffs form what we now call St. Paul, Minnesota).
           </p>
           <p>
             These sessions include public workshops and performance gatherings held throughout the summer at Frogtown Farm, Hidden Falls Regional Park, and Western Sculpture Park (for details click here).
@@ -67,12 +63,16 @@
         </div>
       </section>
 
-      <div class="banner-img bi-sites_performances">
-        <h2>
-          <span>Workshops</span>
-          <span>& Greeting</span>
-          <span>Plants</span>
-        </h2>
+      <div class="banner-img bi-workshops">
+        <img src="/docs/assets/images/banner_img_1.jpg"/>
+        <div class="wrapper h2-text">
+          <h2>
+            <span>Workshops</span>
+            <span>& Greeting</span>
+            <span>Plants</span>
+          </h2>
+        </div>
+
       </div>
     </main>
 
@@ -113,6 +113,7 @@
 
     <section class="wrapper-bg pc-TODO">
       <div class="wrapper">
+        {% include embed-audio.html src="/docs/assets/audio/emakiyapi_1.m4a" %}
         audio recordings here
       </div>
     </section>
