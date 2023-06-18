@@ -9,6 +9,16 @@
   font-weight: bold;
 }
 
+.dark-green-bg {
+  background-color: $dark_green;
+  color: $light_green;
+}
+
+.neon-green-bg {
+  background-color: $neon_green;
+  color: $dark_green;
+}
+
 .prairie_concrete-bold_text {
   @extend .text-bold;
   font-family: $josefin_font_family;
@@ -17,7 +27,7 @@
 
 // CUSTOM CLASSES
 .wrapper-bg {
-   padding: 2rem;
+   padding: 2rem 0;
 }
 
 .banner-img {
@@ -28,18 +38,35 @@
   }
 
   img {
-    opacity: 0.75;
+    // opacity: 0.9;
     max-width: 100%;
     object-fit: cover;
-    max-height: 30rem;
+    // max-height: 30rem;
   }
 
   .h2-text {
-        position: absolute;
-        background-color: $dark_green;
-        bottom: 40%;
-        right: 15%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    @extend .neon-green-bg;
+    background-color:rgba(213, 212, 97, 0.75);
+    // background-color: $dark_green;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h2 {
+      padding-top: 1rem;
+      line-height: 3.5rem;
+      color: $dark_green;
+    font-family: $prompt_font_family;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3rem;
     }
+
+
+  }
 
   // &.bi-sites_performances {
   //   background-image:url(/docs/assets/images/banner_img_1.jpg);
@@ -48,17 +75,17 @@
   //   padding: 2rem;
   // }
 
-  &.bi-workshops {
-    position: relative;
-    text-align: center;
+  // &.bi-workshops {
+  //   position: relative;
+  //   text-align: center;
 
 
 
-    .h2-text {
-        position: absolute;
-        background-color: $dark_green;
-  bottom: 8px;
-  left: 16px;
-    }
-  }
+  //   .h2-text {
+  //       position: absolute;
+  //       background-color: $dark_green;
+  // bottom: 8px;
+  // left: 16px;
+  //   }
+  // }
 }

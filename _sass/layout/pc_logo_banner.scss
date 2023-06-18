@@ -1,6 +1,10 @@
 .pc-logo_banner {
-  background-color: $dark_green;
-  font-size: 1.5rem;
+  @extend .dark-green-bg;
+  font-size: 1rem;
+
+  @media screen and (min-width: 40rem){
+    font-size: 1.5rem;
+  }
 
   .prairie_concrete-logo {
     max-width: 15rem;
@@ -10,7 +14,6 @@
   }
 
   h1 {
-    color: $light_green;
     margin-top: 1.5rem;
     text-align: center;
   }
