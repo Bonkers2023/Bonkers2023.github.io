@@ -1,0 +1,64 @@
+// DEFAULT CLASSES OVERRIDES
+.page-content {
+  padding: 0;
+  width: 100%;
+}
+
+// UNIVERSAL CUSTOM CLASSES
+.text-bold {
+  font-weight: bold;
+}
+
+.prairie_concrete-bold_text {
+  @extend .text-bold;
+  font-family: $josefin_font_family;
+  text-transform: uppercase;
+}
+
+// CUSTOM CLASSES
+.wrapper-bg {
+   padding: 2rem;
+}
+
+.banner-img {
+  position: relative;
+
+  h2 {
+    color: $light_green;
+  }
+
+  img {
+    opacity: 0.75;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 30rem;
+  }
+
+  .h2-text {
+        position: absolute;
+        background-color: $dark_green;
+        bottom: 40%;
+        right: 15%;
+    }
+
+  // &.bi-sites_performances {
+  //   background-image:url(/docs/assets/images/banner_img_1.jpg);
+  //   background-position: 0 -3rem;
+  //   background-size: cover;
+  //   padding: 2rem;
+  // }
+
+  &.bi-workshops {
+    position: relative;
+    text-align: center;
+
+
+
+    .h2-text {
+        position: absolute;
+        background-color: $dark_green;
+  bottom: 8px;
+  left: 16px;
+    }
+  }
+}

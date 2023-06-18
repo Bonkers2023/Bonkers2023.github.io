@@ -1,0 +1,24 @@
+// HEADER
+.site-header {
+  background-color: $dark_green;
+  border: 0;
+  font-family: $prompt_font_family;
+  padding: 1rem 0;
+
+  .site-title {
+    color: $light_green;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+
+    &:visited {
+      color: $light_green;
+    }
+  }
+
+  .site-title-divider {
+    font-weight: 100;
+  }
+}
+

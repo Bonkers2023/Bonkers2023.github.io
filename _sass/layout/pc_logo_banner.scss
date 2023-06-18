@@ -1,0 +1,26 @@
+.pc-logo_banner {
+  background-color: $dark_green;
+  font-size: 1.5rem;
+
+  .prairie_concrete-logo {
+    max-width: 15rem;
+    margin: 0 auto;
+    display: block;
+    width: 75%;
+  }
+
+  h1 {
+    color: $light_green;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .pc-logo_banner-prairie {
+    font-family: $merriweather_font_family;
+  }
+
+  .pc-logo_banner-divider, .pc-logo_banner-concrete {
+    font-family: $prompt_font_family;
+    font-weight: 300;
+  }
+}

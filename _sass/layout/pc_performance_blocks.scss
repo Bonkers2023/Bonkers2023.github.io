@@ -1,0 +1,45 @@
+.pc-performance_blocks {
+  background-color: $light_green;
+
+  h3 {
+    font-family: $prompt_font_family;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+  }
+
+  .rect {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+    p {
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &.neon-green {
+      background-color: $neon_green;
+      color: $dark_green;
+      font-family: $prompt_font_family;
+      font-size: 2rem;
+
+      h3 {
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+    }
+
+    &.dark-green {
+      background-color: $dark_green;
+      color: $light_green;
+
+      p {
+        font-family: $josefin_font_family;
+        font-size: 1.25rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
