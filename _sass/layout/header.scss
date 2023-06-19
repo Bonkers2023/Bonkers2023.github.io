@@ -9,6 +9,19 @@
   top: 0;
   z-index: 999;
 
+  .page-link {
+    color: $light_green;
+  }
+
+  label {
+    background-color: $dark_green;
+  }
+
+  .site-nav {
+    background-color: $dark_green;
+    border-color: $light_green;
+  }
+
   .site-title {
     @extend .text-uppercase;
     color: $light_green;
