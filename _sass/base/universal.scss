@@ -4,6 +4,16 @@
   width: 100%;
 }
 
+.page_content-text {
+  font-family: $josefin_font_family;
+  font-size: 1rem;
+  font-weight: 300;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 // UNIVERSAL CUSTOM CLASSES
 .text-bold {
   font-weight: bold;
@@ -19,6 +29,28 @@
   color: $dark_green;
 }
 
+.light-green-bg {
+  background-color: $light_green;
+  color: $dark_brown;
+
+  a {
+    color: $dark_brown;
+    text-decoration: underline;
+
+    &:hover {
+      color: $dark_green;
+      font-weight: 400;
+    }
+  }
+}
+
+.h3-body {
+  font-family: $prompt_font_family;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
 .prairie_concrete-bold_text {
   @extend .text-bold;
   font-family: $josefin_font_family;
@@ -27,65 +59,5 @@
 
 // CUSTOM CLASSES
 .wrapper-bg {
-   padding: 2rem 0;
-}
-
-.banner-img {
-  position: relative;
-
-  h2 {
-    color: $light_green;
-  }
-
-  img {
-    // opacity: 0.9;
-    max-width: 100%;
-    object-fit: cover;
-    // max-height: 30rem;
-  }
-
-  .h2-text {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    @extend .neon-green-bg;
-    background-color:rgba(213, 212, 97, 0.75);
-    // background-color: $dark_green;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    h2 {
-      padding-top: 1rem;
-      line-height: 3.5rem;
-      color: $dark_green;
-    font-family: $prompt_font_family;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 3rem;
-    }
-
-
-  }
-
-  // &.bi-sites_performances {
-  //   background-image:url(/docs/assets/images/banner_img_1.jpg);
-  //   background-position: 0 -3rem;
-  //   background-size: cover;
-  //   padding: 2rem;
-  // }
-
-  // &.bi-workshops {
-  //   position: relative;
-  //   text-align: center;
-
-
-
-  //   .h2-text {
-  //       position: absolute;
-  //       background-color: $dark_green;
-  // bottom: 8px;
-  // left: 16px;
-  //   }
-  // }
+  padding: 2rem 0;
 }
