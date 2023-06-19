@@ -1,0 +1,10 @@
+.pc-funders {
+  img {
+    max-height: 3rem;
+    margin: 0 1rem 1rem 0;
+
+    @media screen and (min-width: 40rem){
+      max-height: 7rem;
+    }
+  }
+}

@@ -4,7 +4,21 @@
   width: 100%;
 }
 
+.site-footer {
+  background-color: $light_brown;
+  color: $dark_brown;
+}
+
 // UNIVERSAL CUSTOM CLASSES
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-bg {
+  padding: 2rem 0;
+}
+
 .text-align-right {
   text-align: right;
 }
@@ -80,9 +94,4 @@
   @extend .text-bold;
   @extend .text-uppercase;
   font-family: $josefin_font_family;
-}
-
-// CUSTOM CLASSES
-.wrapper-bg {
-  padding: 2rem 0;
 }
