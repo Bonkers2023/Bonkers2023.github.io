@@ -17,13 +17,13 @@
         </div>
       </section>
 
-      <section class="wrapper-bg pc-introduction">
+      <section class="wrapper-bg light-green-bg">
         <div class="wrapper">
           <p class="page_content-text">
             Welcome to <span class="prairie_concrete-bold_text">Prairie|Concrete</span>, a project that brings visibility to plant cycles and growing practices through embodied listening and movement sessions with communities in Imniza Ska, (where the white rock bluffs form what we now call St. Paul, Minnesota).
           </p>
           <p class="page_content-text">
-            These sessions include public workshops and performance gatherings held throughout the summer at Frogtown Farm, Hidden Falls Regional Park, and Western Sculpture Park (for details click here).
+            These sessions include public <a href="#link-workshops">workshops</a> and <a href="#link-performance_gatherings">performance gatherings</a> held throughout the summer at Frogtown Farm, Hidden Falls Regional Park, and Western Sculpture Park.
           </p>
           <p class="page_content-text">
             Prairie Concrete is led by Aniccha Arts, a trans-disciplinary collaborative. Learn more here [link to Aniccha Arts tab]
@@ -31,7 +31,7 @@
         </div>
       </section>
 
-      {% include banner-img-header.html src="/docs/assets/images/banner_img_1.jpg" alt="" title="Performance Gatherings" %}
+      {% include banner-img-header.html src="/docs/assets/images/banner_img_1.jpg" alt="" title="Performance Gatherings" link="link-performance_gatherings"%}
 
       <section class="wrapper-bg pc-performance_blocks">
         <div class="wrapper">
@@ -57,7 +57,7 @@
         </div>
       </section>
 
-    {% include banner-img-header.html src="/docs/assets/images/banner_img_2.jpg" alt="" title="Workshops" %}
+    {% include banner-img-header.html src="/docs/assets/images/banner_img_2.jpg" alt="" title="Workshops" link="link-workshops" %}
 
     <section class="wrapper-bg light-green-bg">
       <div class="wrapper">
@@ -96,7 +96,7 @@
       </div>
     </section>
 
-    {% include banner-img-header.html src="/docs/assets/images/banner_img_3.jpg" alt="" title="Greeting Plants" %}
+    {% include banner-img-header.html src="/docs/assets/images/banner_img_3.jpg" alt="" title="Greeting Plants" link="link-greeting_plants" %}
 
     <section class="wrapper-bg neon-green-bg">
       <div class="wrapper">
@@ -117,7 +117,9 @@
       </div>
     </section>
 
-    <img src="/docs/assets/images/group_photo.jpg" alt="prairie | concrete collaborative members group photo"/>
+
+    {% include banner-img-header.html src="/docs/assets/images/group_photo.jpg" alt="prairie|concrete collaborative members group photo" title="Aniccha Arts" link="link-aniccha_arts" class="pc-aniccha_arts" %}
+    <!-- <img src="/docs/assets/images/group_photo.jpg" alt="prairie | concrete collaborative members group photo"/> -->
     <p>photo by Sequoia Hauck</p>
 
     <section class="wrapper-bg pc-aniccha_arts">
