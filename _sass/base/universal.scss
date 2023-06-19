@@ -4,20 +4,32 @@
   width: 100%;
 }
 
-.page_content-text {
-  font-family: $josefin_font_family;
-  font-size: 1rem;
-  font-weight: 300;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+// UNIVERSAL CUSTOM CLASSES
+.text-align-right {
+  text-align: right;
 }
 
-// UNIVERSAL CUSTOM CLASSES
 .text-bold {
   font-weight: bold;
 }
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.padding-top-1rem {
+  padding-top: 1rem !important;
+}
+
+.bullet {
+  background-color: $dark_green;
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.25rem;
+  margin-bottom: 0.15rem;
+  width: 0.25rem;
+}
+
 
 .dark-green-bg {
   background-color: $dark_green;
@@ -27,6 +39,16 @@
 .neon-green-bg {
   background-color: $neon_green;
   color: $dark_green;
+}
+
+.page_content-text {
+  font-family: $josefin_font_family;
+  font-size: 1rem;
+  font-weight: 300;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .light-green-bg {
@@ -53,8 +75,8 @@
 
 .prairie_concrete-bold_text {
   @extend .text-bold;
+  @extend .text-uppercase;
   font-family: $josefin_font_family;
-  text-transform: uppercase;
 }
 
 // CUSTOM CLASSES

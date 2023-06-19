@@ -2,13 +2,13 @@
   position: relative;
 
   h2 {
+    @extend .text-uppercase;
     color: $dark_green;
     font-family: $prompt_font_family;
     font-size: 3rem;
     font-weight: 600;
     line-height: 3.5rem;
     padding-top: 1rem;
-    text-transform: uppercase;
   }
 
   img {
