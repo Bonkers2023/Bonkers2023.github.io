@@ -27,26 +27,34 @@
       }
     }
 
-    &.neon-green {
-      @extend .neon-green-bg;
-      font-family: $prompt_font_family;
-      font-size: 2rem;
-
-      h3 {
-        @extend .text-uppercase;
-      }
-    }
 
     &.dark-green {
       @extend .dark-green-bg;
       h3 {
         font-size: 1.75rem;
       }
+    }
+  }
 
-      p {
-        font-family: $josefin_font_family;
-        font-size: 1.25rem;
-        font-weight: 400;
+  .neon-green {
+    @extend .neon-green-bg;
+    font-family: $prompt_font_family;
+    font-size: 2rem;
+
+    h3 {
+      @extend .text-uppercase;
+    }
+
+    .page_content-text {
+      line-height: 1rem;
+      a {
+        color: $dark_green;
+        text-decoration: underline;
+
+        &:hover {
+          color: $dark_brown;
+          font-weight: 500;
+        }
       }
     }
   }
