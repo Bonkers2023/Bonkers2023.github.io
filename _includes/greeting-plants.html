@@ -1,4 +1,4 @@
-<section class="wrapper-bg pc-greeting_plants">
+<section class="wrapper-bg pc-greeting_plants white-bg">
   <div class="wrapper">
     <h3 class="h3-body">Dakhóta Greetings</h3>
     <div class="display-flex">
@@ -6,9 +6,21 @@
         <img class="" src="/docs/assets/images/greeting_plants/plant_1.jpg" alt="hand planting seed">
       </div>
       <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/01_emakiyapi_1.mp3" dakhota="(Hau) Mitákuyepi!" english="Hello my relatives!" %}
 
-        {% include embed-audio.html src="/docs/assets/audio/02_emakiyapi_2.mp3" dakhota="_________________emákiyapi." english="My name is (they call me) _________________" %}
+        <div class="margin-bottom-1rem">
+          <audio controls>
+            <source src="/docs/assets/audio/02_emakiyapi_1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <audio controls>
+            <source src="/docs/assets/audio/02_emakiyapi_2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p class="page_content-text">
+            _________________emákiyapi.</br>
+            My name is (they call me) _________________</br>
+          </p>
+        </div>
 
         {% include embed-audio.html src="/docs/assets/audio/03_ohochidapi.mp3" dakhota="Ohóchidapi." english="I respect (revere) you." %}
 

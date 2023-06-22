@@ -48,6 +48,10 @@
   width: 0.25rem;
 }
 
+.white-bg {
+  color: $dark_green;
+}
+
 .dark-green-bg {
   background-color: $dark_green;
   color: $light_green;
@@ -61,7 +65,7 @@
 .page_content-text {
   font-family: $josefin_font_family;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 
   &:last-of-type {
     margin-bottom: 0;
