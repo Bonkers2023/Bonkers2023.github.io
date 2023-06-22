@@ -5,11 +5,7 @@
               <!-- remove time from here and put it in individual date time-->
         <!-- add addresses add link to google map of the address -->
         <!-- frogtown farm: https://goo.gl/maps/NdJ9vbCaZxj7rnQQ9-->
-        <!-- swap performances and workshop order on page-->
         <!-- links on nav not exact low priority-->
-        <!-- new photo for group, make aniccha arts header the same as other banners-->
-        <!-- funders section make white bg -->
-        <!-- link to aniccha arts webpage -->
 
   <body>
     {%- include header.html -%}
@@ -42,112 +38,13 @@
         </div>
       </section>
 
-      {% include banner-img-header.html src="/docs/assets/images/banner_img_1.jpg" alt="" title="Performance Gatherings" link="link-performance_gatherings"%}
+    {% include workshops.html %}
 
-      <section class="wrapper-bg pc-performance_blocks">
-        <div class="wrapper">
-          <div class="rect dark-green">
-            <h3>Come Join Us As We Dance With Plants!</h3>
-            <p>
-              These are kid friendly events.</br>
-              Drop in anytime between <span class="text-bold">2:00 to 5:00pm</span>
-            </p>
-          </div>
-          <div class="rect neon-green">
-            <h3>Western Sculpture Park, Sunday</h3>
-            <p>08.06.2023</p>
-          </div>
-          <div class="rect neon-green">
-            <h3>Hidden Falls Regional Park, Sunday</h3>
-            <p>08.13.2023</p>
-          </div>
-          <div class="rect neon-green">
-            <h3>Frogtown Farm, Sunday</h3>
-            <p>09.10.2023</p>
-          </div>
-        </div>
-      </section>
+    {% include performances.html %}
 
-    {% include banner-img-header.html src="/docs/assets/images/banner_img_2.jpg" alt="" title="Workshops" link="link-workshops" %}
+    {% include greeting-plants.html %}
 
-    <section class="wrapper-bg light-green-bg">
-      <div class="wrapper">
-        <p class="page_content-text">
-          Join us at our in person creative workshops centering plants, trees and their place!
-        </p>
-        <p class="page_content-text">
-          Due to limited space, registration is appreciated for these events.
-        </p>
-        <p class="page_content-text">
-          Please email <a href="mailto:pramila@aniccha.org" target="_blank">pramila[at]aniccha[dot]org</a> for the form. Learn more about our <a href="#link-aniccha_arts">amazing artist team</a>.
-        </p>
-      </div>
-    </section>
-
-    <section class="wrapper-bg dark-green-bg">
-      <div class="wrapper">
-        <h3 class="h3-body">Frogtown Farm</h3>
-        <p class="page_content-text">
-          Wednesday, June 7, 2023 (2:30-4:30pm)</br>
-          Wednesday, July 12, 2023   (2:30-4:30pm)</br>
-          Wednesday, July 26, 2023   (2:30-4:30pm)</br>
-        </p>
-        <h3 class="h3-body">Hidden Falls Regional Park</h3>
-        <p class="page_content-text">
-          Sunday, July 9, 2023 (9am-11am)</br>
-          Sunday, July 16, 2023 (10:30-12:30)</br>
-          Sunday, July 23, 2023 (10:30-12:30)</br>
-        </p>
-        <h3 class="h3-body">Western Sculpture Park</h3>
-        <p class="page_content-text">
-          Wednesday, June 21, 2023  (2:30-4:30pm)</br>
-          Wednesday, July 19, 2023 (2:30-4:30pm)</br>
-          Sunday, July 30, 2023  (2:30-4:30pm)</br>
-        </p>
-      </div>
-    </section>
-
-    {% include banner-img-header.html src="/docs/assets/images/banner_img_3.jpg" alt="" title="Greeting Plants" link="link-greeting_plants" %}
-
-    <section class="wrapper-bg neon-green-bg">
-      <div class="wrapper">
-        <h3 class="h3-body">Greeting Plants</h3>
-        <p class="page_content-text">
-          During some of our workshops, we will invite participants to join us in greeting seeds, plants, and trees - in Dakhóta. We will also learn how to say a few native plant names. This part of the workshop will be led by Cassandra Meyer, who has been learning and teaching Dakhóta for the past twenty years.
-        </p>
-        <p class="page_content-text">
-          We also welcome you to listen to the audio file in advance so you can practice saying these greetings and plant names as you walk through a park or even your own neighborhood. Artwork below is by Kira Vega.
-        </p>
-      </div>
-    </section>
-
-    {% include greeting-plants.html%}
-
-    {% include banner-img-header.html src="/docs/assets/images/group_photo.jpg" alt="prairie|concrete collaborative members group photo" title="Aniccha Arts" link="link-aniccha_arts" class="pc-aniccha_arts" %}
-
-    <section class="wrapper-bg pc-aniccha_arts padding-top-1rem dark-green-bg">
-      <div class="wrapper">
-        <p class="page_content-text text-align-left">photo by Sequoia Hauck</p>
-        <p class="page_content-text">
-          Aniccha Arts was founded by Pramila Vasudevan (2004) and is a movement centered trans-disciplinary arts collaborative that produces site-specific performances.  These performances examine agency, voice, and group dynamics within community histories, institutions, and systems.
-        </p>
-      </div>
-    </section>
-
-    <section class="wrapper-bg pc-prairie_concrete_collaborative neon-green-bg">
-      <div class="wrapper">
-        <h3 class="h3-body text-uppercase">
-          Aniccha Arts Team
-        </h3>
-        <p class="page_content-text">
-          Yasmin Abdi {% include bullet.html%} Sayge Carroll {% include bullet.html%} Shalini Gupta {% include bullet.html%} Sequoia Hauck {% include bullet.html%} Masanari Kawahara {% include bullet.html%} José Luis {% include bullet.html%} Cassandra Meyer {% include bullet.html%} Sam Aros Mitchell {% include bullet.html%} Mankwe Ndosi {% include bullet.html%} Margaret Ogas {% include bullet.html%} Alys Ayumi Ogura {% include bullet.html%} Valerie Oliveiro {% include bullet.html%} Dameun Strange {% include bullet.html%} Jasmine Kar Tang {% include bullet.html%} Alejandra (Tobar Alatriz) {% include bullet.html%} Claire Wilcox {% include bullet.html%} Hui Wilcox {% include bullet.html%} Lynn Wilcox {% include bullet.html%} Pramila Vasudevan {% include bullet.html%} Kira Vega {% include bullet.html%} Judith Shuǐ Xiān.
-        </p>
-        <p class="page_content-text">
-          Thank you to the project photographers and videographers, designers, and developers:
-          Taylan De Johnette, Pallav Kumar, Elisa Lee, Ryan Stopera, and Gisell Calderón.
-        </p>
-      </div>
-    </section>
+    {% include aniccha-arts.html %}
 
     <section class="wrapper-bg white-bg pc-funders">
       <div class="wrapper">
