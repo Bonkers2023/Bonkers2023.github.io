@@ -1,86 +1,9 @@
 <section class="wrapper-bg pc-greeting_plants white-bg">
   <div class="wrapper">
-    <h3 class="h3-body">Dakhóta Greetings</h3>
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_1.jpg" alt="hand planting seed">
-      </div>
-      <div class="right-side">
-        <div class="margin-bottom-1rem">
-          <audio controls>
-            <source src="/docs/assets/audio/02_emakiyapi_1.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <audio controls>
-            <source src="/docs/assets/audio/02_emakiyapi_2.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-          <p class="page_content-text">
-            _________________emákiyapi.</br>
-            My name is (they call me) _________________</br>
-          </p>
-        </div>
+    {% include dakhota-greetings.html %}
 
-        {% include embed-audio.html src="/docs/assets/audio/03_ohochidapi.mp3" dakhota="Ohóchidapi." english="I respect (revere) you." %}
+    {% include place-names.html %}
 
-        {% include embed-audio.html src="/docs/assets/audio/04_wopida.mp3" dakhota="Wópida tánka echíchiyapi(ye/do)." english="Thank you (I say big thanks to you)." %}
-      </div>
-    </div>
-
-
-    <h3 class="h3-body">Plant Names</h3>
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_2.jpg" alt="illustration of a flower">
-      </div>
-      <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/05_wahcha.mp3" dakhota="wahchá" english="flower" %}
-      </div>
-    </div>
-
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_3.jpg" alt="illustration of a showy milkweed">
-      </div>
-      <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/06_phannunpada.mp3" dakhota="Phaƞnúƞpada" english="Showy milkweed" %}
-      </div>
-    </div>
-
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_4.jpg" alt="illustration of a Narrow-leaved coneflower">
-      </div>
-      <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/07_ichahpe_hu.mp3" dakhota="Icháḣpe hu" english="Narrow-leaved coneflower" %}
-      </div>
-    </div>
-
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_5.jpg" alt="illustration of a Prairie onion">
-      </div>
-      <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/08_psin_sichamna.mp3" dakhota="Pṡiƞ ṡíchamna" english="Prairie onion" %}
-      </div>
-    </div>
-
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_6.jpg" alt="illustration of a Meadow blazing star">
-      </div>
-      <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/09_wazimninkpa_iyechecha.mp3" dakhota="Wazímniƞkpa iyéchecha" english="Meadow blazing starn" %}
-      </div>
-    </div>
-
-    <div class="display-flex">
-      <div class="left-side">
-        <img class="" src="/docs/assets/images/greeting_plants/plant_7.jpg" alt="illustration of a Wild bergamot">
-      </div>
-      <div class="right-side">
-        {% include embed-audio.html src="/docs/assets/audio/10_wahpe_wastemna.mp3" dakhota="Waḣpé waṡtémna" english="Wild bergamot" %}
-      </div>
-    </div>
+    {% include plant-names.html %}
   </div>
 </section>
