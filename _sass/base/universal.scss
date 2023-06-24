@@ -1,4 +1,14 @@
 // DEFAULT CLASSES OVERRIDES
+.display-none-max-40rem {
+  @media screen and (max-width: 40rem){
+    display: none;
+  }
+}
+.display-none-min-40rem {
+  @media screen and (min-width: 40rem){
+    display: none;
+  }
+}
 .page-content {
   padding: 0;
   width: 100%;
@@ -21,6 +31,10 @@
 
 .text-align-left {
   text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .text-bold {
